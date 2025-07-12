@@ -1,0 +1,88 @@
+.card {
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.909);
+  box-shadow: 1px 1px 2px 1px gainsboro;
+  padding: 1em 1.5em;
+  border: 3px solid transparent;
+  margin-bottom: 10px;
+}
+
+.content {
+  padding-bottom: 1em;
+}
+
+.votesUserWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.userWrapper {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.dates {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  line-height: 1.2;
+}
+
+.username {
+  color: #4f7b8b;
+}
+
+.created {
+  font-size: 0.85rem;
+  color: rgb(72, 72, 72);
+}
+
+.updated {
+  font-size: 0.8rem;
+  color: grey;
+  padding-top: 0.3rem;
+}
+
+.updateDeleteWrapper {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  font-size: 0.8rem;
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 650px) {
+  .card {
+    padding: 1.2em;
+  }
+  .votesUserWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .votesWrapper {
+    align-self: center;
+  }
+  .userWrapper {
+    flex-direction: row-reverse;
+  }
+  .updateDeleteWrapper {
+    flex-direction: row-reverse;
+  }
+  .dates {
+    line-height: 1.4;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .card {
+    padding: 1em;
+  }
+  .userWrapper {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,25 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 0.8em;
+  padding-left: 0.5em;
+  padding-right: 0.2em;
+  margin-top: 0.2em;
+  margin-bottom: 0.7em;
+}
+
+.filterWrapper,
+.sortWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.8em;
+}
+
+.filterWrapper > button,
+.sortWrapper > button {
+  margin-top: 0.5em;
+}
+
+.sortWrapper {
+  justify-content: end;
+}
